@@ -33,7 +33,7 @@
 
     0% {
         border-radius: 100%;
-        background-color: green;
+        background-color: orangered;
     }
 }
 
@@ -57,7 +57,7 @@
 
     0% {
         border-radius: 100%;
-        background-color: green;
+        background-color: yellow;
         transform: translateX(450px);
     }
 }
@@ -109,7 +109,7 @@
 
     0% {
         border-radius: 100%;
-        background-color: green;
+        background-color: blue;
         transform: translateX(200px)
     }
 }
@@ -163,7 +163,7 @@ p.number0 {
 
     0% {
         border-radius: 100%;
-        background-color: green;
+        background-color: blue;
         transform: translateX(-200px)
     }
 }
@@ -213,7 +213,7 @@ p.number0 {
 
     0% {
         border-radius: 100%;
-        background-color: green;
+        background-color: yellow;
         transform: translateX(-450px);
     }
 }
