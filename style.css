@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*    border: 1px solid white;*/
 }
 
 .container {
@@ -12,13 +13,12 @@
     align-items: center;
 }
 
-/*center of animation*/
+/*center of circle-animation*/
 
 .part-0 {
     height: 100px;
     width: 100px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-0 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -37,13 +37,12 @@
     }
 }
 
-/*first part of animation-circle*/
+/*first part of circle-animation*/
 
 .part-one-3 {
     height: 25px;
     width: 25px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-one-3 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -67,7 +66,6 @@
     height: 50px;
     width: 50px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-one-2 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -93,7 +91,6 @@
     height: 75px;
     width: 75px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-one-1 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -118,6 +115,7 @@ p {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    color: #fff;
 }
 
 p.number3 {
@@ -140,14 +138,12 @@ p.number0 {
     font-size: 35px;
 }
 
-
-/*second part of animation circle*/
+/*second part of circle-animation*/
 
 .part-two-1 {
     height: 75px;
     width: 75px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-two-1 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -172,7 +168,6 @@ p.number0 {
     height: 50px;
     width: 50px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-two-2 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -197,7 +192,6 @@ p.number0 {
     height: 25px;
     width: 25px;
     background-color: aqua;
-    border-radius: 100%;
     animation: part-two-3 alternate infinite;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -215,5 +209,81 @@ p.number0 {
         border-radius: 100%;
         background-color: yellow;
         transform: translateX(-450px);
+    }
+}
+
+/*third part of circle-animation*/
+
+.part-three-1 {
+    height: 75px;
+    width: 75px;
+    background-color: aqua;
+    animation: part-three-1 alternate infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    position: relative;
+    top: 100px;
+    right: 150px
+}
+
+@keyframes part-three-1 {
+    100% {
+        border-radius: 0%;
+        transform: translateY(0)
+    }
+
+    0% {
+        border-radius: 100%;
+        background-color: blue;
+        transform: translateY(200px)
+    }
+}
+
+.part-three-2 {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    animation: part-three-2 alternate infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    position: relative;
+    top: 37px;
+    right: 150px;
+}
+
+@keyframes part-three-2 {
+    100% {
+        border-radius: 0%;
+        transform: translateY(0);
+    }
+
+    0% {
+        border-radius: 100%;
+        background-color: green;
+        transform: translateY(350px);
+    }
+}
+
+.part-three-3 {
+    height: 25px;
+    width: 25px;
+    background-color: aqua;
+    animation: part-three-3 alternate infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    position: relative;
+    right: 150px
+}
+
+@keyframes part-three-3 {
+    100% {
+        border-radius: 0%;
+        transform: translateY(0px);
+    }
+
+    0% {
+        border-radius: 100%;
+        background-color: yellow;
+        transform: translateY(450px);
     }
 }
