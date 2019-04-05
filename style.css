@@ -32,7 +32,7 @@
     }
 
     0% {
-        /*        border-radius: 100%;*/
+        border-radius: 100%;
         background-color: orangered;
     }
 }
