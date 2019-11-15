@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #c3c3c3;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.text {
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+.text::first-letter {
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+}
+
+.arrow {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.fas {
+    padding-top: 20px;
+    font-size: 25px;
+    color: red;
+    animation: bounce-arrow 1s alternate infinite;
+}
+
+@keyframes bounce-arrow {
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(25px);
+        color: #333;
+    }
+}
